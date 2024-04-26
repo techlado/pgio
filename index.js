@@ -31,6 +31,14 @@ app.get("/", (req, res) => {
       message = "success";
       model = result.rows;
     };
+    //Test - output to server console
+    // console.log("Result is:", result);
+    // console.log("==================================");
+    // console.log("Error is:", err);
+    // console.log("Message is:", message);
+    // console.log("Model is:", model);
+
+    // Send result to index view
     res.render("index", {
       message: message,
       model: model
